@@ -1,18 +1,18 @@
 ﻿
-class Program
-{
-    static void Main(string[] args)
-    {
-        Customer customer = new Customer();
-        customer.FirstName = "Basak";   // set bloğu çalışır.
-        customer.LastName = "BULUT";    // set bloğu çalışır.
-        customer.City = "Ankara";       // set bloğu çalışır.
-        customer.Id = 1905;             // set bloğu çalışır.
+// class Program
+// {
+//     static void Main(string[] args)
+//     {
+//         Customer customer = new Customer();
+//         customer.FirstName = "Basak";   // set bloğu çalışır.
+//         customer.LastName = "BULUT";    // set bloğu çalışır.
+//         customer.City = "Ankara";       // set bloğu çalışır.
+//         customer.Id = 1905;             // set bloğu çalışır.
 
-        Customer customer1 = new Customer { FirstName = "Fatma", LastName = "BULUT", City = "Ankara", Id = 1906 }; // set bloğu çalışır.
+//         Customer customer1 = new Customer { FirstName = "Fatma", LastName = "BULUT", City = "Ankara", Id = 1906 }; // set bloğu çalışır.
 
-        Console.WriteLine(customer.FirstName); // get bloğu çalışır
-    }
+//         Console.WriteLine(customer.FirstName); // get bloğu çalışır
+//     }
 
 
     // class Customer  // 
@@ -36,19 +36,19 @@ class Program
 
 
 
-    class Customer  // PASCAL KEY örnekleri ise camel key 
-    {
-        public int Id { get; set; }
-        // Buraya bir field tanımlarız;
-        string _firstName;
-        public string FirstName
-        {
-            get { return "Mrs."+ _firstName; }
-            set { _firstName = value; }
-        }  // **Console.WriteLine(customer.FirstName); output : Mrs.Basak -> tabi bu kod Main Fonksiyonunda olmalı
-        public string LastName { get; set; }
-        public string City { get; set; }
+//     class Customer  // PASCAL KEY örnekleri ise camel key 
+//     {
+//         public int Id { get; set; }
+//         // Buraya bir field tanımlarız;
+//         string _firstName;
+//         public string FirstName
+//         {
+//             get { return "Mrs."+ _firstName; }
+//             set { _firstName = value; }
+//         }  // **Console.WriteLine(customer.FirstName); output : Mrs.Basak -> tabi bu kod Main Fonksiyonundaolmalı
+//         public string LastName { get; set; }
+//         public string City { get; set; }
 
-    }
-}
+//     }
+// }
 
